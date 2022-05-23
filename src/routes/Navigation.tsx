@@ -30,6 +30,7 @@ export const Navigation = () => {
             {routes.map(({ path, Component }) => (
               <Route key={path} path={path} element={<Component />} />
             ))}
+            <Route path='/404' element={<h1>404 - NOT FOUND</h1>} />
             <Route path='*' element={<h1>Not Found</h1>} />
           </Routes>
         </div>
